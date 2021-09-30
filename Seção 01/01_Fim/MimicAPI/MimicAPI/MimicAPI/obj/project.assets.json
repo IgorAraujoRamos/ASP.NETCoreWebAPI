@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igor_\\Desktop\\ASP.NET Core WebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
+      "projectUniqueName": "C:\\Users\\igor_\\Desktop\\ASP.NETCoreWebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
       "projectName": "MimicAPI",
-      "projectPath": "C:\\Users\\igor_\\Desktop\\ASP.NET Core WebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
+      "projectPath": "C:\\Users\\igor_\\Desktop\\ASP.NETCoreWebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
       "packagesPath": "C:\\Users\\igor_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igor_\\Desktop\\ASP.NET Core WebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\obj\\",
+      "outputPath": "C:\\Users\\igor_\\Desktop\\ASP.NETCoreWebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\igor_\\AppData\\Roaming\\NuGet\\NuGet.Config",

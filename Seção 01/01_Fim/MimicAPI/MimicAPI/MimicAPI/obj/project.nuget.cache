@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zLXR+OAX4xv/CnIxgUCbR+WknaGXjTTtM8c+nxZSzwMAQr/efPkRO7L6a2PMQXmTsCln7frS+pUXY7E5q3hleQ==",
+  "dgSpecHash": "TmSeH6kLYev3TwrDIOlX5yYIbnNft2FjNHvaF8uFSUxMYZJZpezVtioNF56tZZxMKR9779HAgIIQ9vdvpVOqvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\igor_\\Desktop\\ASP.NET Core WebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
+  "projectFilePath": "C:\\Users\\igor_\\Desktop\\ASP.NETCoreWebAPI\\Seção 01\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
