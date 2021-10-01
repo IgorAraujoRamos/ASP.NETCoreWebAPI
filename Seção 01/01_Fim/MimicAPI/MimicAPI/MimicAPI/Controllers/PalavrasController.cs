@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MimicAPI.Database;
 using MimicAPI.Models;
 using System;
@@ -38,6 +39,13 @@ namespace MimicAPI.Controllers
         [HttpGet]
         public ActionResult Obter(int id)
         {
+            var obj = _banco.Palavras.Find(id);
+
+            if (obj ==null)
+            {
+                return NotFound();
+            }
+
             return Ok(_banco.Palavras.Find(id));
         }
 
@@ -48,7 +56,7 @@ namespace MimicAPI.Controllers
         {
             _banco.Palavras.Add(palavra);
             _banco.SaveChanges();
-            return Ok();
+            return Created($"/api/palavras/{palavra.Id}", palavra);
         }
 
         // -- /api/palavras(put: id, nome, ativo, pontuacao, criacao)
@@ -56,6 +64,15 @@ namespace MimicAPI.Controllers
         [HttpPut]
         public ActionResult Atualizar(int id,[FromBody] Palavra palavra)
         {
+
+            var obj = _banco.Palavras.AsNoTracking().FirstOrDefault(a=> a.Id == id);
+
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+
             palavra.Id = id;
             _banco.Palavras.Update(palavra);
             _banco.SaveChanges();
@@ -67,12 +84,21 @@ namespace MimicAPI.Controllers
         [HttpDelete]
         public ActionResult Deletar(int id)
         {
+
             var palavra = _banco.Palavras.Find(id);
+
+            if (palavra == null)
+            {
+                return NotFound();
+            }
+
+
+            
             palavra.Ativo = false;
             _banco.Palavras.Update(palavra);
             _banco.SaveChanges();
 
-            return Ok();
+            return NoContent();
         }
     }
 }

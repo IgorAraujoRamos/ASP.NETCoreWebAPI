@@ -59,10 +59,12 @@ namespace MimicAPI
             app.UseStaticFiles();
             app.UseMvc();
             app.UseRouting();
-
+            
             app.UseAuthorization();
 
-           app.UseEndpoints(endpoints =>
+            app.UseStatusCodePages();
+
+            app.UseEndpoints(endpoints =>
            {
               endpoints.MapRazorPages();
             });
